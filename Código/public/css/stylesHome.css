@@ -1,0 +1,211 @@
+header{
+    background-color: transparent;
+    z-index: 2;
+}
+
+.cuerpo{
+    position:absolute;
+    top:0;
+    z-index: -2;
+}
+
+.carrusel-inicio{
+    margin:0;
+    position:relative;
+    width:100vw;
+    height:70vh;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(/images/semillero.jpg);
+    background-size: cover;
+    }
+  .carrusel-inicio img{
+    width: 100vw;
+  }
+
+  .carrito{
+    color:white;
+  }
+
+  .tipos-semillas{
+    background-color: #0b3525;
+    padding:20px;
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .titulo-tipos{
+    width:100%;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+      color:#edebe5;
+      font-size: 18px;
+      font-weight: 600;
+  }
+
+  .div-tipo{
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding:5px 10px;
+      margin:8px 0px;
+  }
+
+  .circular{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    display:inline;
+  }
+
+  .circular img{
+    width: auto;
+    height: 100%;
+    margin-left: -10px;
+  }
+
+  .nombre{
+      margin:0px;
+      font-family: 'Space Mono', monospace;
+      color:#edebe5;
+      font-size: 14px;
+      font-weight: 300;
+  }
+
+
+  .imagen-intermedia{
+    margin:0;
+    position:relative;
+    width:100vw;
+    height:40vh;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(/images/jardineria.jpg);
+    background-size: cover;
+    }
+
+  .imagen-intermedia img{
+    width: 100vw;
+  }
+
+  .letras{
+      background-color: #021b12;
+      padding:30px 10%;
+    font-size: 14px;
+    text-align: center;
+    color:#edebe5;
+    font-weight: lighter;
+  }
+
+
+  .imagen-descripcion{
+    margin:0;
+    position:relative;
+    width:100vw;
+    height:40vh;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(/images/cosecha2.jpg);
+    background-size: cover;
+    }
+
+  .imagen-descripcion img{
+    width: 100vw;
+  }
+
+  .final{
+      background-color: #0b3525;
+      color:#edebe5;
+      font-size: 18px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin:0;
+      padding:20px 0;
+  }
+
+  .final i:hover{
+    color:#24a070;
+  }
+
+  .footer{
+      position:relative;
+      bottom:0;
+   z-index:-2
+
+}
+
+
+@media (min-width:550px){
+    .n1, .cambiante, .logo{
+        color:#07271b;
+        border-color:#07271b;
+    }
+
+    .titulo-tipos{
+        font-size: 22px;
+    }
+
+    .nombre{
+        font-size: 16px;
+    }
+
+    .descripcion-empresa{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        background-color: #021b12;
+    }
+
+    .letras{
+        display:block;
+        width:50vw;
+        height:100%;
+        margin:0;
+    }
+
+    .imagen-descripcion{
+        width:50vw;
+    }
+
+    .final{
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 769px){
+    .carrusel-inicio{
+        height:80vh;
+    }
+
+    .titulo-tipos{
+        font-size: 25px;
+    }
+
+    .circular{
+        width:100px;
+        height:100px;
+    }
+
+    .nombre{
+        font-size: 20px;
+    }
+
+    .letras{
+        font-size: 18px;
+    }
+
+    .final{
+        font-size: 25px;
+    }
+}

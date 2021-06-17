@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a61d9a5be5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesProducto.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="navbar">
+                <div class="menu-celular">
+                    <a href="#" class=hamburger-button><i class="fas fa-bars"></i> MENU</a>
+                </div>
+                <div class="logo">
+                    <img src="/images/Logo temporal.png" alt="Logo" class="logo-imagen">
+                </div>
+                <div class="cambiante">
+                    Aquí deben aparecer textos o animaciones cuando hagas hover a las opciones de la derecha.
+                </div>
+                <div class="nav1">
+                    <div class="n1">
+                        SEMILLAS
+                    </div>
+                    <div class="n1">
+                        JARDÍN
+                    </div>
+                </div>
+                <div class="nav1">
+                    <div class="n1">
+                        <a href="#" class="link-carrito"></a><i class="fas fa-shopping-cart"></i> 0</a>
+                    </div>
+                    <div class="n1">
+                        ABOUT US
+                    </div>
+                </div>
+                <div class="carrito">
+                    <a href="#" class="link-carrito"></a><i class="fas fa-shopping-cart"></i> 0</a>
+                </div>
+            </div>
+            <div class="div-lista">
+                <ul class="lista-menu">
+                    <li><a href="#" class="seccion">TIENDA</a></li>
+                    <ul class=lista-menu>
+                        <li><a href="#" class="subseccion">Semillas</a></li>
+                        <li><a href="#" class="subseccion">Jardín</a></li>
+                    </ul>
+                    <br>
+                    <li><a href="#" class="seccion">COMPAÑÍA</a></li>
+                    <ul class=lista-menu>
+                        <li><a href="#" class="subseccion">About us</a></li>
+                        <li><a href="#" class="subseccion">Contáctanos</a></li>
+                        <li><a href="#" class="subseccion">FAQs</a></li>
+                    </ul>
+                    <br>
+                    <li><a href="#" class="seccion">CUENTA</a></li>
+                    <ul class=lista-menu>
+                        <li><a href="#" class="subseccion" id="inicio-sesion">Iniciar sesión</a></li>
+                        <li><a href="#" class="subseccion">Mis pedidos</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="cuerpo">
+        <br><br>
+        <div class="imagen-producto">
+            <img src="/images/SemillaAgeratumAzul.jpg" alt="" class="img-producto">
+        </div>
+        <div class="escrito">
+            <div class="nombre-carrito">
+                <p class="categoria">FLORES</p>
+                <p class="nombre-producto">Ageratum Azul</p>
+                <p class="precio-producto">$60.00</p>
+                <hr>
+                <div class="agregar-producto">
+                    <form action="obtener-cantidad" method="get">
+                        <input type="number" name="cantidad" id="cantidad" class="cantidad-producto" step="1" min="1"
+                            max="10" value="cantidad" placeholder="1" inputmode="numeric">
+                    </form>
+                    <form action="agregar-carrito" method="post">
+                        <button type="submit" class="boton-agregar"><i
+                                class="fas fa-shopping-cart">&nbsp;</i>AÑADIR</button>
+                    </form>
+                </div>
+                <hr>
+                <p class="descripcion-producto">
+                    Es una planta de temporada que produce, desde comienzos de primavera hasta finales de verano,
+                    flores azules muy vistosas para el jardín.
+                </p>
+                <hr>
+            </div>
+
+            <div class="descripcion-opciones">
+                <div class="botones-descripcion">
+                    <button class="opcion-d"><i class="fas fa-clipboard-list"></i></button>
+                    <button class="opcion-d"><i class="fas fa-hand-holding-heart"></i></button>
+                    <button class="opcion-d"><i class="fas fa-plus"></i></button>
+                </div>
+
+                <p class="opcion-elegida">CUIDADOS</p>
+                <div class="opcion-desplegada">
+                    <ul class="lista-cuidados">
+                        <li>Sembrar entre enero y marzo</li>
+                        <li>Mantener suelo húmedo</li>
+                        <li>Mantener distancia de 30 cm entre ellas</li>
+                        <li>Regar dos veces por semana en primavera e invierno</li>
+                        <li>Trasplantar cuando las plantas alcancen los 10 cm de altura, dejando 20 cm entre ellas</li>
+                        <li>Cortar las puntas de las plantas jóvenes para hacerlas más densas</li>
+                        <li>Regar cada dos días en verano y otoño</li>
+                        <li>Cortar flores marchitas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrusel-planta">
+            <img src="/images/Planta/Imagen1.jpg" alt="Ageratum Azul" class="carrusel-p" id="imagen1">
+            <img src="/images/Planta/Imagen2.jpg" alt="Ageratum Azul" class="carrusel-p" id="imagen2">
+            <img src="/images/Planta/Imagen3.jpg" alt="Ageratum Azul" class="carrusel-p" id="imagen1">
+        </div>
+
+        <div class="opciones-similares">
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="descripcion-footer">
+                <div class="titulo-footer">SEMILLAS</div>
+                Somos una empresa que bla bla bla, semillas y cosas para jardín bla bla.
+            </div>
+            <div class="contenedor-links-footer">
+                <div class="seccion-footer">
+                    <div class="titulo-footer">TIENDA</div>
+                    <hr>
+                    <ul class="links-footer">
+                        <li><a href="#" class="subseccion-f">Todo</a></li>
+                        <li><a href="#" class="subseccion-f">Semillas</a></li>
+                        <li><a href="#" class="subseccion-f">Jardín</a></li>
+                    </ul>
+                </div>
+                <div class="seccion-footer">
+                    <div class="titulo-footer">EMPRESA</div>
+                    <hr>
+                    <ul class="links-footer">
+                        <li><a href="#" class="subseccion-f">About us</a></li>
+                        <li><a href="#" class="subseccion-f">Contáctanos</a></li>
+                        <li><a href="#" class="subseccion-f">FAQs</a></li>
+                </div>
+                <div class="seccion-footer">
+                    <div class="titulo-footer">CUENTA</div>
+                    <hr>
+                    <ul class="links-footer">
+                        <li><a href="#" class="subseccion-f" id="inicio-sesion-footer">Iniciar sesión</a></li>
+                        <li><a href="#" class="subseccion-f">Mis pedidos</a></li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+
+
+</html>

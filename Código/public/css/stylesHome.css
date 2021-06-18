@@ -3,6 +3,10 @@ header{
     z-index: 2;
 }
 
+.main-header a{
+  color:#154734;
+}
+
 .cuerpo{
     position:absolute;
     top:0;

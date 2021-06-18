@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a61d9a5be5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/css/registro2.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="navbar">
+                <div class="menu-celular">
+                    <a href="#" class=hamburger-button><i class="fas fa-bars"></i> MENU</a>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="/images/Logo temporal.png" alt="Logo" class="logo-imagen">
+                    </a>
+                </div>
+                <div class="cambiante">
+                    Aquí deben aparecer textos o animaciones cuando hagas hover a las opciones de la derecha.
+                </div>
+                <div class="nav1">
+                    <div class="n1">
+                        <a href="/views/vistaProducto.html">SEMILLAS</a>
+                    </div>
+                    <div class="n1">
+                        JARDÍN
+                    </div>
+                </div>
+                <div class="nav1">
+                    <div class="n1">
+                        <a href="/views/carrito.html" class="link-carrito"><i class="fas fa-shopping-cart"></i> 0</a>
+                    </div>
+                    <div class="n1">
+                        ABOUT US
+                    </div>
+                </div>
+                <div class="carrito">
+                    <a href="/views/carrito.html" class="link-carrito"><i class="fas fa-shopping-cart"></i> 0</a>
+                </div>
+            </div>
+            <div class="div-lista">
+                <ul class="lista-menu">
+                    <li><a href="#" class="seccion">TIENDA</a></li>
+                    <ul class=lista-menu>
+                        <li><a href="#" class="subseccion">Semillas</a></li>
+                        <li><a href="#" class="subseccion">Jardín</a></li>
+                    </ul>
+                    <br>
+                    <li><a href="#" class="seccion">COMPAÑÍA</a></li>
+                    <ul class=lista-menu>
+                        <li><a href="#" class="subseccion">About us</a></li>
+                        <li><a href="#" class="subseccion">Contáctanos</a></li>
+                        <li><a href="#" class="subseccion">FAQs</a></li>
+                    </ul>
+                    <br>
+                    <li><a href="#" class="seccion">CUENTA</a></li>
+                    <ul class=lista-menu>
+                        <li><a href="#" class="subseccion" id="inicio-sesion">Iniciar sesión</a></li>
+                        <li><a href="#" class="subseccion">Mis pedidos</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div id="usuario">
+            <form class="usuario">
+                <p>Iniciar Sesión</p>
+                <label for="email">E-MAIL:</label>
+                <input type="email" id="email" placeholder="xxxx@gmail.com">
+                <br>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña">
+                <br>
+                <input class="ingresar" type="button" value="Ingresar">
+                <a class="links" href="">¿Haz olvidado tu contraseña?</a>
+            </form>
+    
+        </div>
+        <div id="nuevo">
+            <form class="usuario" action>
+                <p>Cliente nuevo - REGISTRO</p>
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" placeholder="xxxx@gmail.com">
+                <br>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña">
+                <br>
+                <label for="confirma">Confirmar contraseña:</label>
+                <input type="password" name="confirma" id="confirma">
+                <br>
+                <input class="ingresar" type="button" value="Registrate">
+            </form>
+    
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="descripcion-footer">
+                <div class="titulo-footer">SEMILLAS</div>
+                Somos una empresa que bla bla bla, semillas y cosas para jardín bla bla.
+            </div>
+            <div class="contenedor-links-footer">
+                <div class="seccion-footer">
+                    <div class="titulo-footer">TIENDA</div>
+                    <hr>
+                    <ul class="links-footer">
+                        <li><a href="#" class="subseccion-f">Todo</a></li>
+                        <li><a href="#" class="subseccion-f">Semillas</a></li>
+                        <li><a href="#" class="subseccion-f">Jardín</a></li>
+                    </ul>
+                </div>
+                <div class="seccion-footer">
+                    <div class="titulo-footer">EMPRESA</div>
+                    <hr>
+                    <ul class="links-footer">
+                        <li><a href="#" class="subseccion-f">About us</a></li>
+                        <li><a href="#" class="subseccion-f">Contáctanos</a></li>
+                        <li><a href="#" class="subseccion-f">FAQs</a></li>
+                </div>
+                <div class="seccion-footer">
+                    <div class="titulo-footer">CUENTA</div>
+                    <hr>
+                    <ul class="links-footer">
+                        <li><a href="/views/ingresar.html" class="subseccion-f" id="inicio-sesion-footer">Iniciar sesión</a></li>
+                        <li><a href="#" class="subseccion-f">Mis pedidos</a></li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+
+
+</html>

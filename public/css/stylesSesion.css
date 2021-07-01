@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff9e7;
+}
+
+#titulo{
+    font-size: 18px;
+    color: #154734;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+section{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.usuario {
+    width: 100%;
+    text-align: center;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px 0px;
+}
+
+#usuario{
+    width:100%;
+}
+
+#nuevo {
+    width: 300px;
+    height: 450px;
+    text-align: center;
+}
+
+.ingresar {
+    transition: .3s;
+    margin:15px 10px;
+    align-self: center;
+    background-color: transparent;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color:#154734;
+    padding:6px;
+    margin-bottom:10px;
+    border:2px solid #154734;
+    width:40%;
+    transition: background-color 0.4s;
+}
+
+.ingresar:hover{
+    background-color: #154734;
+    color:#e2d8c0;
+}
+
+.label{
+    font-family: 'Space Mono', monospace;
+}
+
+.text{
+    padding:10px 20px;
+    font-family: 'Space Mono', monospace;
+    border: 0;
+    color:#e2d8c0;
+    background-color: #154734;
+    width:60%;
+    transition: background-color .4s;
+    transition: width .4s;
+}
+
+.text:focus{
+    outline:none;
+    width:65%;
+    background-color: #30634f;
+}
+
+.text:hover{
+    width:65%;
+    background-color: #30634f;
+}
+
+.link {
+    color: black;
+    font-size: 12px;
+}
+.link:hover {
+    color: #30634f;
+}
+#aviso {
+    text-align: center;
+    padding-top: 50px;
+}
+#final {
+    padding-top: 3px;
+    height: 20px;
+    background-color: rgb(211,211,211);
+}
+
+.crear_cuenta, .inicio_sesion{
+    padding:6px 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    color: #30634f;
+    transition: padding 0.3s linear, background-color 0.3s linear, color 0.3s linear;
+}
+
+.inicio_sesion{
+    display:inline-block;
+    margin:0;
+    position:absolute;
+    left:15px;
+}
+
+.crear_cuenta:hover, .inicio_sesion:hover{
+        padding: 8px 12px;
+        background-color: #154734;
+        color:#e2d8c0;
+}
+
+.crear_cuenta a, .inicio_sesion a{
+    text-decoration: none;
+    color: #30634f;
+}
+
+.crear_cuenta a:hover, .inicio_sesion a:hover{
+    color:#e2d8c0;
+}
+
+
+@media (min-width: 550px){
+    #titulo{
+        font-size: 22px;
+    }
+
+    .ingresar, .label{
+        font-size: 17px;
+    }
+
+    .text{
+        font-size: 18px;
+    }
+
+    .link{
+        font-size: 14px;
+    }
+
+    .crear_cuenta, .inicio_sesion{
+        font-size: 16px;
+    }
+
+
+}
+
+@media (min-width: 800px){
+    body{
+        background:url(/images/flores.jpg);
+        width:100%;
+    }
+
+    .usuario{
+        width:50%;
+        margin:50px 0px;
+        background-color: #fff9e7;
+    }
+
+    .inicio_sesion a{
+        color:white;
+    }
+}
+
+@media (min-width: 995px){
+    .inicio_sesion a{
+        font-size: 22px;
+    }
+}

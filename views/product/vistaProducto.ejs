@@ -1,0 +1,78 @@
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/stylesProducto.css">
+</head>
+
+
+<body>
+    <%- include('../partials/header') %>
+
+    <div class="cuerpo">
+        <br><br>
+        <div class="imagen-producto">
+            <img src="<%= product.imagen1 %>" alt="" class="img-producto">
+        </div>
+        <div class="escrito">
+            <div class="nombre-carrito">
+                <p class="categoria"><%= product.categoria %></p>
+                <p class="nombre-producto"><%= product.nombre %></p>
+                <p class="precio-producto">$<%= product.precio %></p>
+                <hr>
+                <div class="agregar-producto">
+                    <form action="obtener-cantidad" method="get">
+                        <input type="number" name="cantidad" id="cantidad" class="cantidad-producto" step="1" min="1"
+                            max="10" value="cantidad" placeholder="1" inputmode="numeric">
+                    </form>
+                    <form action="agregar-carrito" method="post">
+                        <button type="submit" class="boton-agregar"><i
+                                class="fas fa-shopping-cart">&nbsp;</i>AÑADIR</button>
+                    </form>
+                </div>
+                <hr>
+                <p class="descripcion-producto">
+                    <%= product.descripcion %>
+                </p>
+                <hr>
+            </div>
+
+            <div class="descripcion-opciones">
+                <div class="botones-descripcion">
+                    <button class="opcion-d"><i class="fas fa-clipboard-list"></i></button>
+                    <button class="opcion-d"><i class="fas fa-hand-holding-heart"></i></button>
+                    <button class="opcion-d"><i class="fas fa-plus"></i></button>
+                </div>
+
+                <p class="opcion-elegida">CUIDADOS</p>
+                <div class="opcion-desplegada">
+                    <ul class="lista-cuidados">
+                        <li>Sembrar entre enero y marzo</li>
+                        <li>Mantener suelo húmedo</li>
+                        <li>Mantener distancia de 30 cm entre ellas</li>
+                        <li>Regar dos veces por semana en primavera e invierno</li>
+                        <li>Trasplantar cuando las plantas alcancen los 10 cm de altura, dejando 20 cm entre ellas</li>
+                        <li>Cortar las puntas de las plantas jóvenes para hacerlas más densas</li>
+                        <li>Regar cada dos días en verano y otoño</li>
+                        <li>Cortar flores marchitas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrusel-planta">
+            <img src="<%= product.imagenM1 %>" alt="Ageratum Azul" class="carrusel-p" id="imagen1">
+            <img src="<%= product.imagenM2 %>" alt="Ageratum Azul" class="carrusel-p" id="imagen2">
+            <img src="<%= product.imagenM3 %>" alt="Ageratum Azul" class="carrusel-p" id="imagen1">
+        </div>
+
+        <div class="opciones-similares">
+
+        </div>
+
+
+
+    </div>
+
+    <%- include('../partials/footer') %> 
+
+</body>
+
+</html>

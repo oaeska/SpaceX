@@ -1,0 +1,45 @@
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/stylesLista.css">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+
+    <div class="cuerpoProductos">
+        <div class="filtro">
+            <p class="titulo">Semillas</p>
+            <p class="texto-descriptivo">Sprout ofrece las mejores y más finas semillas.</p>
+            <button class="opcion-filtro">FLORES</button>
+            <button class="opcion-filtro">VEGETALES</button>
+            <button class="opcion-filtro">ORGÁNICAS</button>
+            <button class="opcion-filtro">HIERBAS</button>
+            <button class="opcion-filtro">HORTALIZAS</button>
+        </div>
+
+        <% for (let i=0; i<products.length; i++) { %>
+        <div class="contenedor-producto">
+            <a href="/producto/<%= products[i].id %>" class="linkProducto">
+                <div class="agregar">
+                    <button class="symbol-add"> <i class="fas fa-plus"></i> <p class="add">ADD</p></button>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="<%= products[i].imagen2 %>" alt="" class="imgProducto">
+                </div>
+                <div class="datosProducto">
+                    <p class="nombre"><%= products[i].nombre %></p>
+                    <p class="precio"><%= products[i].precio %></p>
+                </div>
+            </a>
+        </div>
+        <% } %>
+
+
+        <div class="search-placeholder"></div>
+        <div class="search-placeholder"></div>
+    </div>
+
+    <%- include('../partials/footer') %> 
+
+</body>
+
+</html>

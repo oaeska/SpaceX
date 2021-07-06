@@ -1,0 +1,94 @@
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/agregarProducto.css">
+</head>
+
+
+<body>
+    <%- include('../partials/header') %>
+
+    <div class="cuerpo">
+        <p id="titulo">Información de Producto</p>
+        <form action="" class="form" method="POST">
+            <div class="primera_seccion">
+                <div class="img">
+                    <p class="texto">Imagen del producto:</p>
+                    <div class="inputFile">
+                        SELECCIONAR
+                        <input type="file" name="imagenProducto1" id="imagenProducto1" class="imgProducto" accept=".jpg">
+                    </div>
+                    <div class="inputFile">
+                        SELECCIONAR
+                        <input type="file" name="imagenProducto2" id="imagenProducto2" class="imgProducto" accept=".jpg">
+                    </div>
+                </div>
+                <div class="datos">
+                    <label for="nombreProducto" class="labels">Nombre:</label>
+                    <input type="text" name="nombreProducto" id="nombreProducto" class="input-dato">
+                    <label for="categoria" class="labels">Categoría:</label>
+                    <div class="categoria">
+                        <select name="categoria" id="categoria">
+                            <option value="flor" class="opcion">&#xf863; FLORES</option>
+                            <option value="vegetal" class="opcion">&#xf816; VEGETALES</option>
+                            <option value="organico" class="opcion">&#xf5bb; ORGÁNICAS</option>
+                            <option value="hierba" class="opcion">&#xf4d8; HIERBAS</option>
+                            <option value="hortaliza" class="opcion">&#xf787; HORTALIZAS</option>
+                        </select>
+                    </div>
+                    <label for="precio" class="labels">Precio:</label>
+                    <input type="number" name="precio" id="precio" class="input-dato" min="0.00" placeholder="$">
+                </div>
+            </div>
+            <hr>
+            <div class="segunda_seccion">
+                <div class="contenedor-1">
+                    <p class="texto">Descripción:</p>
+                    <textarea name="descripcion" id="descripcion" class="text-area-d"
+                        placeholder="Descripción general de la planta"></textarea>
+                </div>
+                <div class="contenedor-texta">
+                    <div class="contenedor-secundario">
+                        <p class="texto">Características:</p>
+                        <textarea name="caracteristicas" id="caracteristicas" class="text-area"
+                            placeholder="Características principales de la planta"></textarea>
+                    </div>
+                    <div class="contenedor-secundario">
+                        <p class="texto">Cuidados:</p>
+                        <textarea name="cuidados" id="cuidados" class="text-area"
+                            placeholder="Cuidados de la planta"></textarea>
+                    </div>
+                    <div class="contenedor-secundario">
+                        <p class="texto">Usos:</p>
+                        <textarea name="usos" id="usos" class="text-area" placeholder="Usos de la planta"></textarea>
+                    </div>
+                    <div class="search-placeholder"></div>
+                </div>
+                <div class="contenedor-2">
+                    <p class="texto">Imágenes de muestra:</p>
+                    <div class="imagenesMuestra">
+                        <div class="inputFileM">
+                            Imagen 1
+                            <input type="file" name="imagen1" id="imagen1" class="imgProductoM" accept=".jpg">
+                        </div>
+                        <div class="inputFileM">
+                            Imagen 2
+                            <input type="file" name="imagen2" id="imagen2" class="imgProductoM" accept=".jpg">
+                        </div>
+                        <div class="inputFileM">
+                            Imagen 3
+                            <input type="file" name="imagen3" id="imagen3" class="imgProductoM" accept=".jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="guardar">GUARDAR</button>
+        </form>
+    </div>
+
+    <%- include('../partials/footer') %> 
+
+</body>
+
+
+
+</html>

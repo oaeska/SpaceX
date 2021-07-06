@@ -1,0 +1,38 @@
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/stylesSesion.css">
+</head>
+
+
+<body>
+    <%- include('../partials/header') %>
+
+    <section>
+
+        <div class="usuario">
+            <p class="inicio_sesion"><a href="/login"><i class="fas fa-arrow-left"></i> INICIAR SESION</a></p>
+            <form id="usuario">
+                <p id="titulo">Cliente nuevo</p>
+                <p class="label">nombre de usuario:</p>
+                <input type="text" name="nombre" id="nombre" class="text" required>
+                <br>
+                <p class="label">e-mail:</p>
+                <input type="email" id="email" placeholder="xxxx@gmail.com" class="text" required>
+                <br>
+                <p class="label">contraseña:</p>
+                <input type="password" id="contraseña" class="text" required>
+                <br>
+                <p class="label">confirmar contraseña:</p>
+                <input type="password" name="confirma" id="confirma" class="text" required>
+                <br>
+                <input class="ingresar" type="button" value="REGÍSTRATE">
+            </form>
+
+        </div>
+    </section>
+
+    <%- include('../partials/footer') %> 
+</body>
+
+
+
+</html>

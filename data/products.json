@@ -1,0 +1,47 @@
+[
+    {
+        "id":"1",
+        "nombre": "Ageratum Azul",
+        "categoria": "FLORES",
+        "precio": "60.00",
+        "imagen1": "/images/SemillaAgeratumAzul.jpg",
+        "imagen2": "/images/AgeratumAzul.jpg",
+        "descripcion": "Es una planta de temporada que produce, desde comienzos de primavera hasta finales de verano, flores azules muy vistosas para el jardín.",
+        "caracteristicas": "",
+        "cuidados": "Sembrar entre enero y marzo \n Mantener suelo húmedo \n Mantener distancia de 30 cm entre ellas \n Regar dos veces por semana en primavera e invierno \n Trasplantar cuando las plantas alcancen los 10 cm de altura, dejando 20 cm entre ellas \n Cortar las puntas de las plantas jóvenes para hacerlas más densas \n Regar cada dos días en verano y otoño \n Cortar flores marchitas",
+        "usos": "",
+        "imagenM1": "/images/Planta/Imagen1.jpg",
+        "imagenM2": "/images/Planta/Imagen2.jpg",
+        "imagenM3": "/images/Planta/Imagen3.jpg"
+    },
+    {
+        "id":"2",
+        "nombre": "Zanahoria",
+        "categoria": "HORTALIZAS",
+        "precio": "30.00",
+        "imagen1": "/images/SemillaZanahoriaR.jpg",
+        "imagen2": "/images/Zanahoria.jpg",
+        "descripcion": "Es una planta de temporada que produce, desde comienzos de primavera hasta finales de verano, flores azules muy vistosas para el jardín.",
+        "caracteristicas": "",
+        "cuidados": "Sembrar entre enero y marzo \n Mantener suelo húmedo \n Mantener distancia de 30 cm entre ellas \n Regar dos veces por semana en primavera e invierno \n Trasplantar cuando las plantas alcancen los 10 cm de altura, dejando 20 cm entre ellas \n Cortar las puntas de las plantas jóvenes para hacerlas más densas \n Regar cada dos días en verano y otoño \n Cortar flores marchitas",
+        "usos": "",
+        "imagenM1": "/images/Planta/zanahoria1.jfif",
+        "imagenM2": "/images/Planta/zanahoria2.jpg",
+        "imagenM3": "/images/Planta/zanahoria3.jfif"
+    },
+    {
+        "id":"3",
+        "nombre": "Ageratum Azul",
+        "categoria": "FLORES",
+        "precio": "60.00",
+        "imagen1": "/images/SemillaAgeratumAzul.jpg",
+        "imagen2": "/images/AgeratumAzul.jpg",
+        "descripcion": "Es una planta de temporada que produce, desde comienzos de primavera hasta finales de verano, flores azules muy vistosas para el jardín.",
+        "caracteristicas": "",
+        "cuidados": "Sembrar entre enero y marzo \n Mantener suelo húmedo \n Mantener distancia de 30 cm entre ellas \n Regar dos veces por semana en primavera e invierno \n Trasplantar cuando las plantas alcancen los 10 cm de altura, dejando 20 cm entre ellas \n Cortar las puntas de las plantas jóvenes para hacerlas más densas \n Regar cada dos días en verano y otoño \n Cortar flores marchitas",
+        "usos": "",
+        "imagenM1": "/images/Planta/Imagen1.jpg",
+        "imagenM2": "/images/Planta/Imagen2.jpg",
+        "imagenM3": "/images/Planta/Imagen3.jpg"
+    }
+]

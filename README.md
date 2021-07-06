@@ -1,6 +1,10 @@
 # SpaceX
 Repositorio del Equipo 6
 
+
+Tablero de trabajo: https://trello.com/b/A1tevJWv
+
+
 Temática del sitio:
 Venta de semillas (flores, vegetales, hortalizas, etc) y herramientas sencillas para huertos urbanos. 
 

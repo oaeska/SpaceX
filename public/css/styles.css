@@ -18,7 +18,11 @@ header{
     color: #edebe5;
 }
 
-.main-header a:hover, .n1:hover{
+.main-header a:hover{
+    color:white;
+  }
+
+.n1:hover{
     color:#154734;
 }
 

@@ -1,0 +1,34 @@
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/stylesSesion.css">
+</head>
+
+
+<body>
+    <%- include('../partials/header') %>
+
+    <section>
+        <div class="usuario">
+            <form id="usuario">
+                <p id="titulo">Iniciar Sesión</p>
+                <p class="label">e-mail:</p>
+                <input type="email" id="email" class="text" required placeholder="xxxx@gmail.com">
+                <br>
+                <p class="label">contraseña:</p>
+                <input type="password" id="contraseña" class="text" required>
+                <br>
+                <input class="ingresar" type="button" value="INGRESAR">
+                <br>
+            </form>
+            <a class="link" href="">¿Has olvidado tu contraseña?</a>
+            <p class="crear_cuenta"><a href="/nueva-cuenta"> CREAR CUENTA</a></p>
+    
+        </div>
+    </section>
+
+    <%- include('../partials/footer') %> 
+
+</body>
+
+
+
+</html>

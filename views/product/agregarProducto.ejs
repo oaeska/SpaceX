@@ -8,7 +8,7 @@
 
     <div class="cuerpo">
         <p id="titulo">Información de Producto</p>
-        <form action="" class="form" method="POST">
+        <form action="/products/" class="form" method="POST">
             <div class="primera_seccion">
                 <div class="img">
                     <p class="texto">Imagen del producto:</p>
@@ -22,16 +22,16 @@
                     </div>
                 </div>
                 <div class="datos">
-                    <label for="nombreProducto" class="labels">Nombre:</label>
-                    <input type="text" name="nombreProducto" id="nombreProducto" class="input-dato">
+                    <label for="nombre" class="labels">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" class="input-dato">
                     <label for="categoria" class="labels">Categoría:</label>
                     <div class="categoria">
                         <select name="categoria" id="categoria">
-                            <option value="flor" class="opcion">&#xf863; FLORES</option>
-                            <option value="vegetal" class="opcion">&#xf816; VEGETALES</option>
-                            <option value="organico" class="opcion">&#xf5bb; ORGÁNICAS</option>
-                            <option value="hierba" class="opcion">&#xf4d8; HIERBAS</option>
-                            <option value="hortaliza" class="opcion">&#xf787; HORTALIZAS</option>
+                            <option value="FLORES" class="opcion">&#xf863; FLORES</option>
+                            <option value="VEGETALES" class="opcion">&#xf816; VEGETALES</option>
+                            <option value="ORGÁNICAS" class="opcion">&#xf5bb; ORGÁNICAS</option>
+                            <option value="HIERBAS" class="opcion">&#xf4d8; HIERBAS</option>
+                            <option value="HORTALIZAS" class="opcion">&#xf787; HORTALIZAS</option>
                         </select>
                     </div>
                     <label for="precio" class="labels">Precio:</label>
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <button class="guardar">GUARDAR</button>
+            <button class="guardar" type="submit">GUARDAR</button>
         </form>
     </div>
 

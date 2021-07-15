@@ -1,5 +1,9 @@
+const fs = require('fs');
+const path = require('path');
+const productsFilePath = path.join(__dirname, '../data/products.data.json');
+
 const productsModel = require('../models/product.model');
-const products = require('../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController ={
     home: function(req,res){
@@ -10,8 +14,32 @@ const productController ={
         return res.status(200).render('product/agregarProducto');
     },
 
+    store: function(req,res){
+        try {
+            console.log('STORE');
+            let infoProducto = req.body;
+            console.log(infoProducto);
+            productsModel.create(infoProducto);
+            res.redirect('/products/lista');
+          } catch(err) {
+            console.log(err)
+            return res
+            .status(500)
+            .render('error', { message: 'Occurrió un error al crear el producto', status: 500 })
+          }
+    },
+
     modificarProductoView: function(req,res){
-        return res.status(200).render('product/modificarProducto');
+        const productId = req.params.id;
+        const product = productsModel.findById(productId);
+        return res.status(200).render('product/modificarProducto', {product});
+    },
+
+    update: function(req,res){
+        const productId = req.params.id;
+        const product = req.body;
+        productsModel.update(product, productId);
+        res.redirect('/products/lista');
     },
 
     carritoView: function(req,res){
@@ -33,7 +61,13 @@ const productController ={
         console.log(product);
         return res.status(200).render('product/vistaProducto', {product});
     },
-}
+
+    delete: function(req,res){
+        const productId = req.params.id;
+        productsModel.delete(productId);
+        res.redirect('/products/lista');
+    }
+};
 
 
 module.exports = productController;

@@ -14,7 +14,7 @@
         <div class="escrito">
             <div class="nombre-carrito">
                 <p class="categoria"><%= product.categoria %></p>
-                <p class="nombre-producto"><%= product.nombre %></p>
+                <p class="nombre-producto"><%= product.nombre%></p>
                 <p class="precio-producto">$<%= product.precio %></p>
                 <hr>
                 <div class="agregar-producto">
@@ -32,6 +32,7 @@
                     <%= product.descripcion %>
                 </p>
                 <hr>
+                <a href="/products/<%= product.id %>/edit"><button type="submit" class="boton-agregar">MODIFICAR</button></a>
             </div>
 
             <div class="descripcion-opciones">

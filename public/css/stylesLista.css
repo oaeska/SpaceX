@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #466b5f;
+}
+
+.cuerpoProductos{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #466b5f;
+    color:white;
+}
+
+.filtro{
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    padding:10px;
+}
+
+.titulo{
+    font-family:'Libre Baskerville', serif;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+.texto-descriptivo{
+    font-size: 14px;
+}
+
+.opcion-filtro{
+    font-family: 'Space Mono', monospace;
+    background-color: transparent;
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid white;
+    color:white;
+}
+
+.opcion-filtro:hover{
+    background-color: white;
+    color:#154734;
+}
+
+.contenedor-producto{
+    width:45%;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:10px 5px;
+    background-color: white;
+}
+
+.contenedor-producto:hover{
+    box-shadow: 2px 2px 2px 2px #c5c2c2;
+}
+
+.contenedor-producto a{
+    text-decoration: none;
+}
+
+.agregar{
+    padding: 15px 15px;
+    text-align: left;
+}
+
+.symbol-add{
+    border:2px solid grey;
+    background-color: transparent;
+    font-family: 'Space Mono', monospace;
+}
+
+.symbol-add:hover{
+    background-color:rgb(226, 223, 223);
+}
+
+.add{
+    display:inline-block;
+    margin:0;
+    display:none;
+}
+
+.contenedorImagen{
+    width:90%;
+    justify-self:center;
+    margin:auto;
+    margin-bottom: 15px;
+}
+
+.imgProducto{
+    display:block;
+    position:relative;
+    width:100%;
+}
+
+.datosProducto{
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    padding: 8px 0;
+    background-color: #466b5f
+}
+
+.datosProducto p{
+    margin:0;
+}
+
+.nombre{
+    color:white;
+}
+
+.precio{
+    color:rgb(226, 245, 227);
+}
+
+.search-placeholder {
+    width: 45%;
+    height: 2px;
+    margin: 5px;
+    padding: 5px;        
+    flex-basis: 45%;
+  }
+
+  @media (min-width: 550px){
+        .cuerpoProductos{
+            padding: 0 4%;
+        }
+
+      .titulo{
+        font-size: 45px;
+      }
+
+      .texto-descriptivo{
+        font-size: 16px;
+      }
+
+      .opcion-filtro{
+        font-size: 16px;
+      }
+
+      .symbol-add{
+          font-size: 18px;
+      }
+
+      .datosProducto{
+          font-size: 18px;
+      }
+  }
+
+  @media (min-width: 800px){
+        .titulo{
+            font-size: 35px;
+        }
+
+        .opcion-filtro{
+            font-size: 14px;
+        }
+
+        .texto-descriptivo{
+            display:none;
+        }
+
+        .cuerpoProductos{
+            align-items: stretch;
+            padding:0 4%;
+        }
+
+      .filtro, .contenedor-producto{
+          width: 28%;
+      }
+
+      .filtro{
+          margin-top: 30px;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-bottom: 10px;
+          text-align: left;
+          padding: 20px;
+          border: 2px solid #154734 ;
+      }
+
+      .search-placeholder{
+          width: 28%;
+          flex-basis:28%;   
+      }
+
+      .contenedor-producto{
+          margin-top: 30px;
+      }
+
+      .datosProducto{
+          background-color: white;
+      }
+
+      .add{
+          display:inline-block;
+          font-size: 18px;
+      }
+
+      .nombre{
+          color:black;
+      }
+
+      .precio{
+          color:#466b5f;
+      }
+  }
+
+  @media (min-width: 1100px){
+    .titulo{
+        font-size: 45px;
+    }
+
+    .opcion-filtro{
+        font-size: 16px;
+    }
+
+    .texto-descriptivo{
+        display:block;
+    }
+  }
+
+  @media (min-width: 1700px){
+      .filtro, .contenedor-producto{
+          width: 22%;
+      }
+
+      .search-placeholder{
+          width: 22%;
+          flex-basis: 22%;
+      }
+  }

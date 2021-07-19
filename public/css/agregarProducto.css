@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f2e9;
+}
+
+.cuerpo{
+    text-align: center;
+}
+
+#titulo{
+    font-weight: 800;
+    font-size: 19px;
+}
+
+.primera_seccion{
+    padding:0 30px;
+}
+
+.cuerpo hr{
+    border:1px solid grey;
+    width:80%;
+}
+
+.datos{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputFile{
+    background-color: #317259;
+    font-family: 'Space Mono', monospace;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto 0;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 5px auto;
+}
+
+.imgProducto{
+ cursor: pointer;
+ margin: 0;
+ opacity: 0;
+ outline: 0 none;
+ padding: 0;
+ position: absolute;
+ right: 0px;
+ top: 0px;
+width:100%;
+height:100%;
+}
+
+.texto{
+    text-align: left;
+}
+
+.labels{
+    margin:15px 0;
+    align-self: flex-start;
+    width:30%;
+    text-align: left;
+}
+
+.text-area{
+    width:90%;
+}
+
+.input-dato{
+    width:50%;
+    padding: 5px 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color:#e2d8c0;
+    background-color: #154734;
+    transition: background-color .4s;
+    transition: width .4s;
+    border:none;
+}
+
+.input-dato:focus{
+    outline:none;
+    width:55%;
+    background-color: #30634f;
+}
+
+.input-dato:hover{
+    width:55%;
+    background-color: #30634f;
+}
+
+.categoria{
+    width:50%;
+    position:relative;
+}
+  
+  .categoria select {
+    font-family: 'Space Mono', monospace, 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 550;
+    background-color: #154734;
+    color: #e2d8c0;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    width:100%;
+  }
+  
+  .categoria:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #30634f;
+  }
+  
+  .categoria select option {
+    padding: 30px;
+    font-weight: 550;
+  }
+
+.segunda_seccion{
+    padding:0 30px;
+}
+
+.text-area-d{
+    resize:none;
+    width:100%;
+    height:110px;
+    padding: 5px 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color:#e2d8c0;
+    background-color: #154734;
+    transition: background-color .5s;
+    transition: height .4s;
+    border:none;
+}
+
+.text-area-d:focus{
+    outline:none;
+    height:115px;
+    background-color: #30634f;
+}
+
+.text-area-d:hover{
+    height:115px;
+    background-color: #30634f;
+}
+
+.text-area{
+    resize:vertical;
+    width:100%;
+    height:120px;
+    padding: 5px 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color:#154734;
+    background-color: transparent;
+    border:1px solid #154734;
+    transition: border .4s;
+    transition: background-color .5s;
+}
+
+.text-area:focus{
+    outline:none;
+    border: 2px solid #30634f;
+    background-color: #d4cab1;
+}
+
+.text-area:hover{
+    border: 2px solid #30634f;
+    background-color: #d4cab1;
+}
+
+.imagenesMuestra{
+    margin:auto;
+    padding:0 10%;
+}
+
+.inputFileM{
+    background-color: #317259;
+    font-family: 'Space Mono', monospace;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.imgProductoM{
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+   width:100%;
+   height:100%;
+   }
+
+.guardar {
+    transition: .3s;
+    margin:15px 10px;
+    align-self: center;
+    background-color: transparent;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color:#154734;
+    padding:6px;
+    margin-bottom:10px;
+    border:2px solid #154734;
+    width:50%;
+    transition: background-color 0.4s;
+}
+
+.guardar:hover{
+    background-color: #154734;
+    color:#e2d8c0;
+}
+
+.contenedor-texta{
+    width:100%;
+}
+
+.contenedor-1, .contenedor-2{
+    width:100%;
+}
+
+.contenedor-secundario{
+    width:100%;
+}
+
+@media (min-width:500px){
+    .datos, .img{
+        width:65%;
+    }
+
+    .primera_seccion, .segunda_seccion{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categoria select, .input-dato{
+        font-size: 17px;
+    }
+
+    .categoria, .input-dato{
+        width:65%;
+    }
+
+    .input-dato:hover, .input-dato:focus{
+        width:70%;
+    }
+
+    .texto{
+        width:100%;
+    }
+
+    .contenedor-texta .texto{
+        width:100%;
+    }
+
+    .contenedor-texta, .contenedor-1, .contenedor-2{
+        width:80%;
+    }
+
+    .text-area, .text-area-d{
+        width:100%;
+        font-size: 15px;
+    }
+
+    .guardar{
+        width:37%;
+        font-size: 20px;
+    }
+
+    #titulo{
+        font-size: 22px;
+    }
+
+    .labels, .texto{
+        font-size: 18px;
+    }
+
+    .imagenesMuestra{
+        width:80%;
+    }
+}
+
+@media(min-width:800px){
+
+    .primera-seccion{
+        flex-direction: row;
+    }
+
+    .segunda_seccion{
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .img, .datos{
+        width:40%;
+        margin:0 10px;
+    }
+
+    .contenedor-1, .contenedor-2{
+        width:40%;
+    }
+
+    .contenedor-texta{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedor-1{
+        order:-1;
+        margin:0 10px;
+    }
+
+    .contenedor-2{
+        order:0;
+        margin:0 10px;
+    }
+
+    .contenedor-texta{
+        order:1;
+
+    }
+
+    .text-area-d{
+        margin:5px 0;
+        height:122px;
+        transition:height none;
+        font-size: 17px;
+    }
+
+    .text-area-d:hover{
+        height:122px;
+    }
+
+    .contenedor-secundario{
+        margin:0 10px;
+        padding:0px;
+        width:40%;
+    }
+
+    .text-area{
+        height:150px;
+        border-width:2px;
+        font-size: 17px;
+    }
+
+    .search-placeholder {
+        width: 40%;
+        height: 2px;
+        padding:2%;
+        margin: 10px;        
+        flex-basis: 40%;
+      }
+
+      .guardar{
+        width:25%;
+        font-size: 20px;
+        margin: 25px 0;
+    }
+
+    #titulo{
+        font-size: 25px;
+    }
+
+    .labels, .texto{
+        font-size: 20px;
+    }
+
+    .categoria select, .input-dato{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1500px){
+    .img, .datos, .contenedor-1, .contenedor-2, .contenedor-secundario, .search-placeholder{
+        width:30%;
+    }
+}

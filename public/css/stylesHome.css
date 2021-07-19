@@ -4,7 +4,11 @@ header{
 }
 
 .main-header a{
-  color:#154734;
+  color:white;
+}
+
+.main-header a:hover{
+  color:#edebe5;
 }
 
 .cuerpo{
@@ -150,8 +154,12 @@ header{
 
 @media (min-width:550px){
     .n1, .cambiante, .logo{
-        color:#07271b;
-        border-color:#07271b;
+        color:#edebe5;
+        border-color: #edebe5;
+    }
+
+    .main-header a:hover{
+      color:#154734;
     }
 
     .titulo-tipos{

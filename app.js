@@ -2,25 +2,22 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
+app.set('view engine', 'ejs');
 
 const publicPath= path.resolve(__dirname, './public')
 app.use(express.static(publicPath)); //tener carpeta public como recurso estático para poder usar sus elementos de manera sencilla
 
-app.get('/' || '/views/home.html', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, './views/home.html'));
-});
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.get('/views/carrito.html', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, './views/carrito.html'));
-});
+const methodOverride =  require('method-override');
+app.use(methodOverride('_method'));
 
-app.get('/views/vistaProducto.html', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, './views/vistaProducto.html'));
-});
+var indexRouter = require('./routes/index');
+const productsRouter = require('./routes/products'); // Rutas /products
 
-app.get('/views/ingresar.html', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, './views/ingresar.html'));
-});
+app.use('/', indexRouter);
+app.use('/products', productsRouter);
 
 app.listen(process.env.PORT || 3000, function(){
     console.log('Servidor corriendo en el puerto 3000')

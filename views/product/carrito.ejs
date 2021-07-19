@@ -1,0 +1,73 @@
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/stylesCarrito.css">
+</head>
+
+
+<body>
+    <%- include('../partials/header') %>
+
+
+    <div class="cuerpo">
+
+        <div class="encabezado">
+            <div class="total">
+                <p class="titulo-carrito">Tu Carrito</p>&nbsp;&nbsp;
+                <p class="cantidad-total">$30.98</p>
+            </div>
+            <div class="botones">
+                <button class="continuar-compra">SEGUIR COMPRANDO</button>
+                <button class="pagar">PAGAR</button>
+            </div>
+        </div>
+
+
+        <div class="productos-agregados">
+            <article class="producto">
+                <img src="/images/SemillaAgeratumAzul.jpg" alt="Ageratum Azul" class="imagen-producto">
+                <p class="nombre-producto">Ageratum Azul</p>
+                <div class="tache"><i class="fas fa-times"></i></div>
+                <form action="obtener-cantidad" method="get">
+                    <input type="number" name="cantidad" id="cantidad" class="cantidad-producto" step="1" min="1"
+                        max="10" value="cantidad" placeholder="1" inputmode="numeric">
+                </form>
+                <p class="precio-producto">$16.49</p>
+            </article>
+            <article class="producto">
+                <img src="/images/SemillaZanahoriaR.jpg" alt="Zanahoria" class="imagen-producto">
+                <p class="nombre-producto">Zanahoria</p>
+                <div class="tache"><i class="fas fa-times"></i></div>
+                <form action="obtener-cantidad" method="get">
+                    <input type="number" name="cantidad" id="cantidad" class="cantidad-producto" step="1" min="1"
+                        max="10" value="cantidad" placeholder="1" inputmode="numeric">
+                </form>
+                <p class="precio-producto">$14.49</p>
+            </article>
+            
+            <div class="search-placeholder"></div>
+        </div>
+
+        <div class="precios">
+            <div class="subtotal">
+                <p class="sub">SUBTOTAL</p>
+                <p class="num-subtotal">$30.98</p>
+            </div>
+            <div class="costo-envio">
+                <button class="envio"><i class="fas fa-paper-plane"></i>&nbsp;COSTO DE ENVÍO</button>
+                <p class="calculo-envio">$$$$</p>
+            </div>
+            <div class="calculo-total">
+                <p class="calc-total">TOTAL</p>
+                <p class="num-total">$30.98</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <%- include('../partials/footer') %> 
+
+</body>
+
+
+
+</html>

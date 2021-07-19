@@ -1,0 +1,18 @@
+[
+    {
+        "id" : "1",
+        "categoria" : "admin",
+        "nombre": "Ana Hernández",
+        "usuario": "AnaH",
+        "email" : "email@gmail.com",
+        "contraseña": "sprout123456"
+    },
+    {
+        "id" : "2",
+        "categoria" : "cliente",
+        "nombre": "Isabel Soriano",
+        "usuario": "IsabelS",
+        "email" : "email@gmail.com",
+        "contraseña": "123456sprout"
+    }
+]

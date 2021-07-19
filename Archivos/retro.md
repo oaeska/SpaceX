@@ -22,3 +22,16 @@ Entregar los sprints en tiempo y forma.
 Dejar pasar el tiempo para empezar a planificar, para poder completar todos los requisitos que se nos solicitan.
 5. Dejar de hacer 
 No comunicarnos y no pedir ayuda a los profesores cuando hay problemas.
+
+
+Sprint 4:
+1. Comenzar a hacer:
+Dividir actividades entre todo el equipo y completar las actividades asignadas.
+2. Hacer más
+Comprometerse con tiempos de entrega.
+3. Continuar haciendo
+Entregar los sprints.
+4. Hacer menos 
+Comunicar los problemas al último momento.
+5. Dejar de hacer 
+Abandonar al equipo ):
